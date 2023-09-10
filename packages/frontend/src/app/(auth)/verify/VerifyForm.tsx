@@ -78,7 +78,7 @@ export function VerifyForm({
           <Input type="text" disabled={!!loading} autoFocus />
         </FormControl>
 
-        <div className="mt-8 flex">
+        <div className="my-8 flex">
           <Button
             fullWidth
             disabled={loading}
