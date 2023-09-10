@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
+import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
 import { UrqlWrapper } from "@flexmvp/app/UrqlWrapper";
 import AmplifyWrapper from "./AmplifyWrapper";
 import ThemeWrapper from "./ThemeWrapper";
@@ -9,7 +10,6 @@ import ThemeWrapper from "./ThemeWrapper";
 import "nprogress/nprogress.css";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./globals.css";
-import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
 
 const inter = Inter({ subsets: ["latin"] });
 
