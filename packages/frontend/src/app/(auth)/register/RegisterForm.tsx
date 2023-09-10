@@ -103,8 +103,9 @@ export function RegisterForm({ onSuccess, autoSignIn }: RegisterFormProps) {
           </Checkbox>
         </FormControl>
 
-        <FormButton>Create account</FormButton>
-
+        <div className="mt-8 flex">
+          <FormButton>Create account</FormButton>
+        </div>
         <FormError />
         <FormSuccessMessage>
           Account created successfully, please check your email for confirmation

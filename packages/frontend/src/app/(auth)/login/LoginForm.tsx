@@ -4,7 +4,7 @@ import { Auth } from "aws-amplify";
 import { Input } from "react-daisyui";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
-import { FormButton, FormControl, FormError } from "@flexmvp/components";
+import { Form, FormControl, FormError } from "@flexmvp/components";
 import config from "@flexmvp/config";
 import { useRedirectClient, useResendConfirmationEmail } from "@flexmvp/hooks";
 import { useAuthState } from "@flexmvp/stores";
@@ -72,7 +72,9 @@ export function LoginForm({ onSuccess, autoSignIn = true }: LoginFormProps) {
         <FormControl label="Password" id="password">
           <Input type="password" autoComplete="on" />
         </FormControl>
-        <FormButton>Sign in</FormButton>
+        <div className="mt-8 flex">
+          <Form.Button>Sign int</Form.Button>
+        </div>
         <FormError />
         {showResend && (
           <ResendConfirmationEmailButton
