@@ -1,0 +1,14 @@
+{
+  "availability-zones:account=323038792461:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ],
+  "hosted-zone:account=323038792461:domainName=flexmvp.com:region=us-east-1": {
+    "Id": "/hostedzone/Z06689131RPMKQHKT2S3A",
+    "Name": "flexmvp.com."
+  }
+}

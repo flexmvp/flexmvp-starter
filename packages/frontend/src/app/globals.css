@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Page transition indicators
+ */
+#nprogress .bar {
+  background: hsl(var(--p)) !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: hsl(var(--p)) !important;
+  border-left-color: hsl(var(--p)) !important;
+  display: none;
+}
+
+/**
+ * Toast Notifications
+ */
+:root {
+  --toastify-color-light: hsl(var(--b1)); /* #fff; */
+  --toastify-color-dark: hsl(var(--bc)); /* #121212; */
+  --toastify-color-info: hsl(var(--in)); /*#3498db; */
+  --toastify-color-success: hsl(var(--su)); /*#07bc0c; */
+  --toastify-color-warning: hsl(var(--wa)); /*#f1c40f; */
+  --toastify-color-error: hsl(var(--er)); /*#e74c3c; */
+}

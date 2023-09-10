@@ -1,0 +1,27 @@
+{
+  "name": "@flexmvp-starter-2/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "db:migrate": "drizzle-kit generate:pg",
+    "db:drop": "drizzle-kit drop"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "sst": "2.5.5",
+    "vitest": "^0.29.1"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/jwk-to-pem": "^2.0.1",
+    "aws-sdk": "^2.1324.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwk-to-pem": "^2.0.5",
+    "kysely": "^0.23.4",
+    "kysely-data-api": "^0.1.4",
+    "sst": "2.5.5",
+    "ulid": "^2.3.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "exportall.config.folderListener": [
+    "/packages/frontend/src/components",
+    "/packages/frontend/src/hooks",
+    "/packages/frontend/src/stores",
+    "/packages/frontend/src/utils",
+    "/packages/frontend/src/components/ui",
+    "/packages/frontend/src/components/form",
+    "/packages/frontend/src/components/layout",
+    "/packages/frontend/src/components/icons"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

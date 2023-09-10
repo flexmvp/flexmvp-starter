@@ -1,0 +1,34 @@
+type Article {
+  comments: [Comment!]!
+  id: ID!
+  title: String!
+  url: String!
+}
+
+"""Authentication response object"""
+type Auth {
+  """HTTP status code"""
+  code: String!
+
+  """Status of the request"""
+  status: String!
+}
+
+type Comment {
+  id: ID!
+  text: String!
+}
+
+type Mutation {
+  addComment(articleId: String!, text: String!): Comment!
+  createArticle(title: String!, url: String!): Article!
+  deleteArticle(articleId: String!): Article!
+  updateArticle(articleId: String!, title: String!, url: String!): Article!
+  verify(confirmationCode: String!, emailAddress: String!): Auth!
+}
+
+type Query {
+  getArticle(articleId: String!): Article!
+  listArticles: [Article!]!
+  me: String!
+}
