@@ -9,6 +9,7 @@ import ThemeWrapper from "./ThemeWrapper";
 import "nprogress/nprogress.css";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./globals.css";
+import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,16 +27,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="h-full">
       <body className={clsx(inter.className, "h-screen")}>
-        <UrqlWrapper>
-          <ThemeWrapper>
-            <AmplifyWrapper>
-              <>
-                {children}
-                <ToastContainer theme={"light"} />
-              </>
-            </AmplifyWrapper>
-          </ThemeWrapper>
-        </UrqlWrapper>
+        <ErrorBoundary>
+          <UrqlWrapper>
+            <ThemeWrapper>
+              <AmplifyWrapper>
+                <>
+                  {children}
+                  <ToastContainer theme={"light"} />
+                </>
+              </AmplifyWrapper>
+            </ThemeWrapper>
+          </UrqlWrapper>
+        </ErrorBoundary>
       </body>
     </html>
   );

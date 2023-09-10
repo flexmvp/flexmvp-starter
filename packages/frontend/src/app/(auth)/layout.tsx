@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
 import { AuthLayout, AuthLayoutProps } from "@flexmvp/components";
 import config from "@flexmvp/config";
 import { useAutoSignInListener, useRedirectClient } from "@flexmvp/hooks";
@@ -24,7 +25,7 @@ export default function Layout({
   // TODO: Refactor to components
   return (
     <AuthLayout sidebar={sidebar} {...props}>
-      {children}
+      <ErrorBoundary>{children}</ErrorBoundary>
     </AuthLayout>
   );
 }

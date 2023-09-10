@@ -21,9 +21,11 @@ export function AuthLayout({ sidebar, children }: AuthLayoutProps) {
           </Link>
         </nav>
         {/* Left Sidebar Content */}
-        <main className="flex-grow m-8">{sidebar}</main>
+        <main className="flex-grow m-8">Welcome to FlexMVP</main>
         {/* Footer */}
-        <footer className="flex-shrink-0 m-4">[footer links]</footer>
+        <footer className="flex-shrink-0 m-4">
+          &copy; {new Date().getFullYear().toString()} - FlexMVP
+        </footer>
       </div>
       {/* Auth Form Wrapper (Right Container) */}
       <div className="flex flex-col items-center flex-grow min-h-screen h-screen w-full bg-base-200 sticky top-0">
@@ -43,7 +45,7 @@ export function AuthLayout({ sidebar, children }: AuthLayoutProps) {
         </main>
         {/* Footer */}
         <footer className="flex md:hidden flex-shrink-0 py-4">
-          [footer links]
+          &copy; {new Date().getFullYear().toString()}
         </footer>
       </div>
     </div>
