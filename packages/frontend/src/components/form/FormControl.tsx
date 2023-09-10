@@ -35,7 +35,7 @@ const FormControlBase = React.forwardRef<HTMLDivElement, FormControlProps>(
   ): JSX.Element => {
     // Form Context
     const { register, getFieldState, ...context } = useFormContext() || {};
-    const disabled = context.control._options.context?.disabled;
+    const disabled = context?.control?._options?.context?.disabled;
     const { isDirty, isTouched, invalid, error } = !!getFieldState
       ? getFieldState(id)
       : {

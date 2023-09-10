@@ -39,7 +39,9 @@ const FormButton: React.FC<FormButtonProps> = ({
   return (
     <Button
       // fullWidth={fullWidth}
-      disabled={finalIsSubmitting || context.control._options.context?.disabled}
+      disabled={
+        finalIsSubmitting || context?.control?._options?.context?.disabled
+      }
       loading={type === "submit" && finalIsSubmitting}
       color={color}
       type={type}
