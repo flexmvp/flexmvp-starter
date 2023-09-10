@@ -4,6 +4,8 @@ The FREE batteries included full stack starter kit for software startups optimiz
 
 Build with ❤️ using AWS + TypeScript
 
+Demo: [demo.flexmvp.com](https://demo.flexmvp.com/)
+
 ## Mission
 
 To launch 10,000 startup projects
