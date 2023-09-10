@@ -72,7 +72,7 @@ export function LoginForm({ onSuccess, autoSignIn = true }: LoginFormProps) {
         <FormControl label="Password" id="password">
           <Input type="password" autoComplete="on" />
         </FormControl>
-        <div className="my-8 flex">
+        <div className="mt-8 flex">
           <Form.Button>Sign in</Form.Button>
         </div>
         <FormError />

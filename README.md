@@ -149,6 +149,7 @@ GenQL also generates TypeScript types for the frontend application in `packages/
 - [ ] Custom email templates & reply-to
 - [ ] Public SSR page example
 - [ ] Social login
+- [ ] Rename project instructions
 
 ### v3.0
 

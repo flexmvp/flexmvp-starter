@@ -103,7 +103,7 @@ export function RegisterForm({ onSuccess, autoSignIn }: RegisterFormProps) {
           </Checkbox>
         </FormControl>
 
-        <div className="my-8 flex">
+        <div className="mt-8 flex">
           <FormButton>Create account</FormButton>
         </div>
         <FormError />
