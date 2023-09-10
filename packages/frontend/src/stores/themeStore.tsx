@@ -1,6 +1,7 @@
+/* eslint-disable import/order */
 "use client";
-import tailwindConfig from "@flexmvp/../tailwind.config";
 import { create } from "zustand";
+import tailwindConfig from "@flexmvp/../tailwind.config";
 import { devtools, persist } from "zustand/middleware";
 
 const themesConfig = tailwindConfig.daisyui.themes;

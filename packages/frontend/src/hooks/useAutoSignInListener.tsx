@@ -43,5 +43,6 @@ export function useAutoSignInListener(
         }, timeout);
       }
     });
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // empty array ensures that effect is only run on mount and unmount
 }

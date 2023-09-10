@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import tailwindConfig from "@flexmvp/../tailwind.config"; // Adjust this to your tailwind.config.js path
 import { ne } from "drizzle-orm";
 import { useMediaQuery } from "react-responsive";

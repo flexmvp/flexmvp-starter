@@ -1,47 +1,33 @@
-import React, { ReactNode } from "react";
+"use client";
+import React, { Component, ErrorInfo, ReactNode } from "react";
 
-// 1. Define the state type
-interface ErrorBoundaryState {
-  hasError: boolean;
-}
-
-// 2. Define the props type (assuming the ErrorBoundary doesn't take any additional props)
-interface ErrorBoundaryProps {
+interface Props {
   children: ReactNode;
 }
 
-// 3. Update the class declaration to use the types
-class ErrorBoundary extends React.Component<
-  ErrorBoundaryProps,
-  ErrorBoundaryState
-> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false };
-  }
+interface State {
+  hasError: boolean;
+}
 
-  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+class ErrorBoundary extends Component<Props, State> {
+  public state: State = {
+    hasError: false,
+  };
+
+  public static getDerivedStateFromError(_: Error): State {
+    // Update state so the next render will show the fallback UI.
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
-    console.log({ error, errorInfo });
+  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error("Uncaught error:", error, errorInfo);
   }
 
-  render(): ReactNode {
+  public render() {
     if (this.state.hasError) {
-      return (
-        <div>
-          <h2>Oops, there is an error!</h2>
-          <button
-            type="button"
-            onClick={() => this.setState({ hasError: false })}
-          >
-            Try again?
-          </button>
-        </div>
-      );
+      return <h1>Sorry.. there was an error</h1>;
     }
+
     return this.props.children;
   }
 }
