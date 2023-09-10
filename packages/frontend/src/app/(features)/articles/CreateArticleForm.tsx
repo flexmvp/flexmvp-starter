@@ -4,8 +4,8 @@ import {
   Article,
   ArticleRequest,
   MutationRequest,
-} from "@flexmvp-starter-2/graphql/genql";
-import { useTypedMutation } from "@flexmvp-starter-2/graphql/urql";
+} from "@flexmvp-starter/graphql/genql";
+import { useTypedMutation } from "@flexmvp-starter/graphql/urql";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "react-daisyui";
 import { SubmitHandler, useForm } from "react-hook-form";

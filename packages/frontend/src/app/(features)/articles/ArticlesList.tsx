@@ -1,5 +1,5 @@
-import { Article } from "@flexmvp-starter-2/graphql/genql";
-import { useTypedQuery } from "@flexmvp-starter-2/graphql/urql";
+import { Article } from "@flexmvp-starter/graphql/genql";
+import { useTypedQuery } from "@flexmvp-starter/graphql/urql";
 import {
   ChevronRightIcon,
   PencilSquareIcon,

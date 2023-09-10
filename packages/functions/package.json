@@ -1,5 +1,5 @@
 {
-  "name": "@flexmvp-starter-2/functions",
+  "name": "@flexmvp-starter/functions",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/node": "^18.14.2",
     "@types/aws-lambda": "^8.10.111",
-    "@flexmvp-starter-2/core": "0.0.0",
+    "@flexmvp-starter/core": "0.0.0",
     "sst": "2.5.5"
   },
   "dependencies": {

@@ -54,7 +54,7 @@ module.exports = nextConfig
 
 function getModules() {
   return Object.keys(dependencies || [])
-    .filter(dependency => dependency.startsWith('@flexmvp-starter-2/'));
+    .filter(dependency => dependency.startsWith('@flexmvp-starter/'));
   // TODO: Load package name from root package.json
 }
 

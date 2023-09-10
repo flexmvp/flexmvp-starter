@@ -1,5 +1,5 @@
 "use client";
-import { Article } from "@flexmvp-starter-2/graphql/genql";
+import { Article } from "@flexmvp-starter/graphql/genql";
 import { PlusCircleIcon, PlusIcon } from "@heroicons/react/24/outline";
 import { useEffect } from "react";
 import { Button, Divider } from "react-daisyui";

@@ -1,7 +1,7 @@
 import { Api } from "sst/constructs";
 import { expect, it } from "vitest";
-import { createClient } from "@flexmvp-starter-2/graphql/genql";
-import { Article } from "@flexmvp-starter-2/core/src/article";
+import { createClient } from "@flexmvp-starter/graphql/genql";
+import { Article } from "@flexmvp-starter/core/src/article";
 
 // it("create an article", async () => {
 //   const client = createClient({

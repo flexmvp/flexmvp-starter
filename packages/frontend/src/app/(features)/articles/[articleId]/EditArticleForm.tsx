@@ -1,5 +1,5 @@
-import { Article, ArticleRequest } from "@flexmvp-starter-2/graphql/genql";
-import { useTypedMutation } from "@flexmvp-starter-2/graphql/urql";
+import { Article, ArticleRequest } from "@flexmvp-starter/graphql/genql";
+import { useTypedMutation } from "@flexmvp-starter/graphql/urql";
 import { DefaultValues, SubmitHandler } from "react-hook-form";
 import { toast } from "react-toastify";
 import { z } from "zod";

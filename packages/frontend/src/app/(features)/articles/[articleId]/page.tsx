@@ -1,6 +1,6 @@
 "use client";
-import { Article } from "@flexmvp-starter-2/graphql/genql";
-import { useTypedQuery } from "@flexmvp-starter-2/graphql/urql";
+import { Article } from "@flexmvp-starter/graphql/genql";
+import { useTypedQuery } from "@flexmvp-starter/graphql/urql";
 
 import { toast } from "react-toastify";
 import { EditArticleForm } from "@flexmvp/app/(features)/articles/[articleId]/EditArticleForm";

@@ -1,5 +1,5 @@
 {
-  "name": "@flexmvp-starter-2/graphql",
+  "name": "@flexmvp-starter/graphql",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {

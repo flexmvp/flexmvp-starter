@@ -23,7 +23,7 @@ export function AuthStack({ stack, app }: StackContext) {
           // emailBody: "Verify your account by clicking on {##Verify Email##}",
           emailStyle: VerificationEmailStyle.CODE,
           // emailStyle: VerificationEmailStyle.LINK,
-          // e.g. link = https://auth-flexmvp-starter-2-chris.auth.us-east-1.amazoncognito.com/confirmUser?client_id=qod0r44gbleg44b1qd4n6rcc6&user_name=6172b89d-276f-4910-98dc-b6c12c9c5db1&confirmation_code=874398
+          // e.g. link = https://auth-flexmvp-starter-chris.auth.us-east-1.amazoncognito.com/confirmUser?client_id=qod0r44gbleg44b1qd4n6rcc6&user_name=6172b89d-276f-4910-98dc-b6c12c9c5db1&confirmation_code=874398
         },
       },
     },

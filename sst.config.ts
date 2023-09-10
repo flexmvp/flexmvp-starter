@@ -8,7 +8,7 @@ import { FrontendStack } from "./stacks/Frontend";
 export default {
   config(_input) {
     return {
-      name: "flexmvp-starter-2",
+      name: "flexmvp-starter",
       region: "us-east-1",
     };
   },

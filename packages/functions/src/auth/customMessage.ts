@@ -59,7 +59,7 @@ export const handler = async (event: CustomMessageTriggerEvent) => {
 
   // TODO: Custom HTML email template from theme
 
-  console.log("🍋 customMessage.handler event.response: ", event.response);
+  // console.log("🍋 customMessage.handler event.response: ", event.response);
   return event;
 };
 /**
