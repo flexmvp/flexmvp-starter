@@ -12,7 +12,7 @@ export const db = drizzle(rdsClient, {
   secretArn: RDS.db.secretArn,
   resourceArn: RDS.db.clusterArn,
   database: RDS.db.defaultDatabaseName,
-  logger: !!process.env.IS_LOCAL,
+  logger: !!process.env?.IS_LOCAL,
 });
 
 export const migrate = async (path: string) => {

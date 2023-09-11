@@ -8,7 +8,7 @@ import {
 import NProgress from "nprogress";
 import { useEffect } from "react";
 
-NProgress.configure({ parent: "#theme" });
+// NProgress.configure({ parent: "#theme" });
 
 export function onStart() {
   NProgress.start();

@@ -27,7 +27,7 @@ export function FrontendStack({ app, stack }: StackContext) {
       NEXT_PUBLIC_APP_REGION: app.region,
       NEXT_PUBLIC_USER_POOL_ID: auth.userPoolId,
       NEXT_PUBLIC_USER_POOL_CLIENT_ID: auth.userPoolClientId,
-      NEXT_PUBLIC_ROLLBAR_ACCESS_TOKEN: "bar",
+      NEXT_PUBLIC_ROLLBAR_ACCESS_TOKEN: process.env.ROLLBAR_ACCESS_TOKEN || "",
     },
   });
 
