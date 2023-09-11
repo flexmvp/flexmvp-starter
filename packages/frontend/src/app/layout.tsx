@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
-import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
+import RollbarBoundary from "@flexmvp/app/RollbarBoundary";
 import { UrqlWrapper } from "@flexmvp/app/UrqlWrapper";
 import AmplifyWrapper from "./AmplifyWrapper";
 import ThemeWrapper from "./ThemeWrapper";
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="h-full">
       <body className={clsx(inter.className, "h-screen")}>
-        <ErrorBoundary>
+        <RollbarBoundary>
           <UrqlWrapper>
             <ThemeWrapper>
               <AmplifyWrapper>
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </AmplifyWrapper>
             </ThemeWrapper>
           </UrqlWrapper>
-        </ErrorBoundary>
+        </RollbarBoundary>
       </body>
     </html>
   );

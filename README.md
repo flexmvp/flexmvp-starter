@@ -142,6 +142,7 @@ GenQL also generates TypeScript types for the frontend application in `packages/
 - [ ] Edit user profile & password
 - [ ] Seed sample users, articles, comments
 - [ ] Load theme, project name, and logo from config file
+- [ ] Rollbar integration
 
 ### v2.0
 

@@ -20,13 +20,14 @@ export function FrontendStack({ app, stack }: StackContext) {
     // buildCommand: "npm run build",
     // buildOutput: "dist",
     environment: {
+      NEXT_PUBLIC_APP_STAGE: stack.stage,
       NEXT_PUBLIC_GRAPHQL_URL: api.url + "/graphql",
       NEXT_PUBLIC_APP_URL: appUrl || "http://APP_URL_NOT_SET/",
       NEXT_PUBLIC_API_URL: api.url || "https://API_URL_NOT_SET/",
       NEXT_PUBLIC_APP_REGION: app.region,
       NEXT_PUBLIC_USER_POOL_ID: auth.userPoolId,
       NEXT_PUBLIC_USER_POOL_CLIENT_ID: auth.userPoolClientId,
-      NEXT_PUBLIC_FOO: "bar",
+      NEXT_PUBLIC_ROLLBAR_ACCESS_TOKEN: "bar",
     },
   });
 

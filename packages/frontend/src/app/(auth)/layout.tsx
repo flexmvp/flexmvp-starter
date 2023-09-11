@@ -1,7 +1,7 @@
 "use client";
 
+import { ErrorBoundary } from "@rollbar/react";
 import { useEffect } from "react";
-import ErrorBoundary from "@flexmvp/app/ErrorBoundry";
 import { AuthLayout, AuthLayoutProps } from "@flexmvp/components";
 import config from "@flexmvp/config";
 import { useAutoSignInListener, useRedirectClient } from "@flexmvp/hooks";
